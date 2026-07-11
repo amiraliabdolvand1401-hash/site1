@@ -1,0 +1,276 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "امیرعلی عبدالملکی",
+      "phone": "09121112233",
+      "balanceToman": 150000000,
+      "inventory": {
+        "imami": 2,
+        "bahar": 3,
+        "nim": 5,
+        "rob": 8,
+        "gerami": 12
+      },
+      "isVerified": true,
+      "role": "admin",
+      "createdAt": "2026-06-01T10:00:00Z"
+    },
+    {
+      "id": "u2",
+      "name": "سارا کریمی",
+      "phone": "09183456789",
+      "balanceToman": 45000000,
+      "inventory": {
+        "imami": 1,
+        "bahar": 0,
+        "nim": 2,
+        "rob": 4,
+        "gerami": 5
+      },
+      "isVerified": true,
+      "role": "user",
+      "createdAt": "2026-06-15T14:30:00Z"
+    },
+    {
+      "id": "u3",
+      "name": "محمد حسینی",
+      "phone": "09359876543",
+      "balanceToman": 12000000,
+      "inventory": {
+        "imami": 0,
+        "bahar": 1,
+        "nim": 0,
+        "rob": 1,
+        "gerami": 2
+      },
+      "isVerified": false,
+      "role": "user",
+      "createdAt": "2026-07-01T09:15:00Z"
+    },
+    {
+      "id": "u4",
+      "name": "مریم احمدی",
+      "phone": "09012345678",
+      "balanceToman": 85000000,
+      "inventory": {
+        "imami": 3,
+        "bahar": 2,
+        "nim": 4,
+        "rob": 10,
+        "gerami": 15
+      },
+      "isVerified": true,
+      "role": "user",
+      "createdAt": "2026-07-04T18:45:00Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "t1",
+      "userId": "u2",
+      "userName": "سارا کریمی",
+      "type": "buy",
+      "coinType": "rob",
+      "coinLabel": "ربع سکه",
+      "amount": 2,
+      "pricePerCoin": 17000000,
+      "totalPrice": 34000000,
+      "status": "approved",
+      "createdAt": "2026-07-04T11:20:00Z"
+    },
+    {
+      "id": "t2",
+      "userId": "u3",
+      "userName": "محمد حسینی",
+      "type": "sell",
+      "coinType": "bahar",
+      "coinLabel": "سکه بهار آزادی",
+      "amount": 1,
+      "pricePerCoin": 45000000,
+      "totalPrice": 45000000,
+      "status": "approved",
+      "createdAt": "2026-07-05T09:40:00Z"
+    },
+    {
+      "id": "t3",
+      "userId": "u4",
+      "userName": "مریم احمدی",
+      "type": "buy",
+      "coinType": "imami",
+      "coinLabel": "سکه امامی",
+      "amount": 1,
+      "pricePerCoin": 50000000,
+      "totalPrice": 50000000,
+      "status": "pending",
+      "createdAt": "2026-07-06T06:15:00Z"
+    },
+    {
+      "id": "t4",
+      "userId": "u2",
+      "userName": "سارا کریمی",
+      "type": "sell",
+      "coinType": "gerami",
+      "coinLabel": "سکه گرمی",
+      "amount": 3,
+      "pricePerCoin": 8000000,
+      "totalPrice": 24000000,
+      "status": "pending",
+      "createdAt": "2026-07-06T07:10:00Z"
+    },
+    {
+      "id": "t_1783352511015",
+      "userId": "u1",
+      "userName": "امیرعلی عبدالملکی",
+      "type": "buy",
+      "coinType": "imami",
+      "coinLabel": "سکه امامی",
+      "amount": 1,
+      "pricePerCoin": 52440000,
+      "totalPrice": 52440000,
+      "status": "pending",
+      "createdAt": "2026-07-06T15:41:51.015Z"
+    }
+  ],
+  "sms": [
+    {
+      "id": "s1",
+      "recipientName": "سارا کریمی",
+      "phone": "09183456789",
+      "message": "کاربر گرامی سارا کریمی، معامله خرید ۲ عدد ربع سکه شما تایید شد. با تشکر، سکه رمضانی",
+      "status": "sent",
+      "createdAt": "2026-07-04T11:22:00Z"
+    },
+    {
+      "id": "s2",
+      "recipientName": "محمد حسینی",
+      "phone": "09359876543",
+      "message": "کاربر گرامی، لطفا جهت آغاز معاملات ابتدا مدارک احراز هویت خود را در پنل کاربری بارگذاری نمایید.",
+      "status": "sent",
+      "createdAt": "2026-07-02T10:05:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n1",
+      "title": "به سکه رمضانی خوش آمدید",
+      "body": "حساب کاربری شما با موفقیت ایجاد شد. از هم اکنون می‌توانید قیمت‌ها را مقایسه کرده و اقدام به خرید و فروش نمایید.",
+      "userId": "all",
+      "createdAt": "2026-07-01T08:00:00Z"
+    },
+    {
+      "id": "n2",
+      "title": "نوسان قیمت سکه امامی",
+      "body": "نرخ سکه امامی امروز با روند قیمتی پایدار در محدوده ۵۲.۴ میلیون تومان معامله می‌شود.",
+      "userId": "all",
+      "createdAt": "2026-07-05T12:00:00Z"
+    }
+  ],
+  "historicalPrices": [
+    {
+      "date": "1405/04/10",
+      "imami": 50300000,
+      "bahar": 44400000,
+      "nim": 26100000,
+      "rob": 16300000,
+      "gerami": 7600000,
+      "gold18": 3400000,
+      "goldMelted": 14500000,
+      "usd": 59500,
+      "eur": 64500,
+      "btc": 3510500000,
+      "eth": 178500000,
+      "usdt": 59500
+    },
+    {
+      "date": "1405/04/11",
+      "imami": 50500000,
+      "bahar": 44600000,
+      "nim": 26300000,
+      "rob": 16500000,
+      "gerami": 7700000,
+      "gold18": 3400000,
+      "goldMelted": 14500000,
+      "usd": 59500,
+      "eur": 64500,
+      "btc": 3510500000,
+      "eth": 178500000,
+      "usdt": 59500
+    },
+    {
+      "date": "1405/04/12",
+      "imami": 50800000,
+      "bahar": 44800000,
+      "nim": 26500000,
+      "rob": 16700000,
+      "gerami": 7800000,
+      "gold18": 3400000,
+      "goldMelted": 14500000,
+      "usd": 59500,
+      "eur": 64500,
+      "btc": 3510500000,
+      "eth": 178500000,
+      "usdt": 59500
+    },
+    {
+      "date": "1405/04/13",
+      "imami": 50700000,
+      "bahar": 44700000,
+      "nim": 26400000,
+      "rob": 16600000,
+      "gerami": 7800000,
+      "gold18": 3400000,
+      "goldMelted": 14500000,
+      "usd": 59500,
+      "eur": 64500,
+      "btc": 3510500000,
+      "eth": 178500000,
+      "usdt": 59500
+    },
+    {
+      "date": "1405/04/14",
+      "imami": 51100000,
+      "bahar": 45100000,
+      "nim": 26800000,
+      "rob": 16900000,
+      "gerami": 7900000,
+      "gold18": 3400000,
+      "goldMelted": 14500000,
+      "usd": 59500,
+      "eur": 64500,
+      "btc": 3510500000,
+      "eth": 178500000,
+      "usdt": 59500
+    },
+    {
+      "date": "1405/04/15",
+      "imami": 51300000,
+      "bahar": 45300000,
+      "nim": 27000000,
+      "rob": 17000000,
+      "gerami": 7950000,
+      "gold18": 3400000,
+      "goldMelted": 14500000,
+      "usd": 59500,
+      "eur": 64500,
+      "btc": 3510500000,
+      "eth": 178500000,
+      "usdt": 59500
+    },
+    {
+      "date": "1405/04/16",
+      "imami": 52450000,
+      "bahar": 46300000,
+      "nim": 27800000,
+      "rob": 17450000,
+      "gerami": 8200000,
+      "gold18": 3400000,
+      "goldMelted": 14500000,
+      "usd": 59500,
+      "eur": 64500,
+      "btc": 3510500000,
+      "eth": 178500000,
+      "usdt": 59500
+    }
+  ]
+}

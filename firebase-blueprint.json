@@ -1,0 +1,120 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile data",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "balanceToman": { "type": "number" },
+        "inventory": {
+          "type": "object",
+          "properties": {
+            "imami": { "type": "number" },
+            "bahar": { "type": "number" },
+            "nim": { "type": "number" },
+            "rob": { "type": "number" },
+            "gerami": { "type": "number" },
+            "gold18": { "type": "number" },
+            "goldMelted": { "type": "number" },
+            "usd": { "type": "number" },
+            "eur": { "type": "number" },
+            "btc": { "type": "number" },
+            "eth": { "type": "number" },
+            "usdt": { "type": "number" }
+          }
+        },
+        "isVerified": { "type": "boolean" },
+        "role": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "Transaction": {
+      "title": "Transaction",
+      "description": "Buy/Sell transactions",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "type": { "type": "string" },
+        "coinType": { "type": "string" },
+        "coinLabel": { "type": "string" },
+        "amount": { "type": "number" },
+        "pricePerCoin": { "type": "number" },
+        "totalPrice": { "type": "number" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "SMSLog": {
+      "title": "SMSLog",
+      "description": "Log of sent SMS messages",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "recipientName": { "type": "string" },
+        "phone": { "type": "string" },
+        "message": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "SystemNotification": {
+      "title": "SystemNotification",
+      "description": "System wide notifications",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "body": { "type": "string" },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "HistoricalPrice": {
+      "title": "HistoricalPrice",
+      "description": "Historical prices",
+      "type": "object",
+      "properties": {
+        "date": { "type": "string" },
+        "imami": { "type": "number" },
+        "bahar": { "type": "number" },
+        "nim": { "type": "number" },
+        "rob": { "type": "number" },
+        "gerami": { "type": "number" },
+        "gold18": { "type": "number" },
+        "goldMelted": { "type": "number" },
+        "usd": { "type": "number" },
+        "eur": { "type": "number" },
+        "btc": { "type": "number" },
+        "eth": { "type": "number" },
+        "usdt": { "type": "number" }
+      }
+    }
+  },
+  "firestore": {
+    "users": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "Stores user profiles"
+    },
+    "transactions": {
+      "schema": { "$ref": "#/entities/Transaction" },
+      "description": "Stores transactions"
+    },
+    "smsLogs": {
+      "schema": { "$ref": "#/entities/SMSLog" },
+      "description": "Stores SMS logs"
+    },
+    "notifications": {
+      "schema": { "$ref": "#/entities/SystemNotification" },
+      "description": "Stores system notifications"
+    },
+    "historicalPrices": {
+      "schema": { "$ref": "#/entities/HistoricalPrice" },
+      "description": "Stores historical prices"
+    }
+  }
+}

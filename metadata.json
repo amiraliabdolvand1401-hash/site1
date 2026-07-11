@@ -1,0 +1,6 @@
+{
+  "name": "سکه رمضانی",
+  "description": "سامانه هوشمند و پیشرفته معامله سکه و طلا (سکه رمضانی) همراه با تحلیل گر پیشرفته هوش مصنوعی Gemini، نمودارهای مقایسه حباب سکه، مدیریت سرمایه و پنل شبیه ساز پیامک و اعلان ها.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
